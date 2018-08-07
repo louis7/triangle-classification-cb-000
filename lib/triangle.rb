@@ -36,7 +36,7 @@ end
         raise TriangleError
       end
   end
-if @total[0] +@total[1] < @total[2]
+if @total[0] +@total[1] < @total[2] ||  @total[0] +@total[2] < @total[1]  || @total[2] +@total[1] < @total[0]
   raise TriangleError
 end
 
