@@ -48,9 +48,9 @@ describe 'Triangle' do
     expect{Triangle.new(3, 4, -5).kind}.to raise_error(Triangle::TriangleError)
   end
 
-  it 'knows that triangles violating triangle inequality are illegal' do
-    expect{Triangle.new(1, 1, 3).kind}.to raise_error(Triangle::TriangleError)
-  end
+    it 'knows that triangles violating triangle inequality are illegal' do
+      expect{Triangle.new(1, 1, 3).kind}.to raise_error(Triangle::TriangleError)
+    end
 
   it 'knows that triangles violating triangle inequality are illegal 2' do
     expect{Triangle.new(2, 4, 2).kind}.to raise_error(Triangle::TriangleError)
