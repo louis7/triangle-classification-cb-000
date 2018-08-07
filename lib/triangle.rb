@@ -37,7 +37,6 @@ end
       end
   end
 if @total[0] +@total[1] < @total[2]
-  binding.pry 
   raise TriangleError
 end
 
